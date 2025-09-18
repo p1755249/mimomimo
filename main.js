@@ -62,7 +62,7 @@ function createPlayer() {
     loadSketchfabModel(playerModelPath, function(model) {
         player = model;
         player.position.set(0, 0.5, -20); 
-        player.scale.set(4.0, 4.0, 4.0); 
+        player.scale.set(3.0, 3.0, 3.0); 
         player.rotation.y = 0; 
         scene.add(player);
         console.log('猫咪模型加载成功，大小:', player.scale);
@@ -79,7 +79,7 @@ function createCarsWithModels() {
                 if (cars.length >= 20) {
                 }
                 const car = carTemplate.clone(); 
-                car.position.set( -20 ,  0.3);
+                car.position.set( -20 ,  0.3 ,(Math.random() - 0.5) * 16);
                 car.scale.set(1, 1, 1);
                 car.rotation.y = Math.PI / 2; 
                 car.userData = { speed: gameState.carSpeed + Math.random() * 0.02 };
