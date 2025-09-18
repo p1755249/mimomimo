@@ -62,7 +62,7 @@ function createPlayer() {
     loadSketchfabModel(playerModelPath, function(model) {
         player = model;
         player.position.set(10, 0.5, -20); 
-        player.scale.set(3.0, 3.0, 3.0); 
+        player.scale.set(4.0, 4.0, 4.0); 
         player.rotation.y = 0; 
         scene.add(player);
         console.log('猫咪模型加载成功，大小:', player.scale);
