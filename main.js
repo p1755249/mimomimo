@@ -190,7 +190,7 @@ function checkCollision(player, car) {
 
 function resetPlayer() {
     if (player) {
-        player.position.set(10, 0.5, -20); // 重置到马路边缘起始位置
+        player.position.set(10, 0.5, -20); 
     }
     gameState.isMoving = false;
 }
