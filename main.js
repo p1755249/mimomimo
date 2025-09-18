@@ -61,7 +61,7 @@ function createPlayer() {
     const playerModelPath = './oiiaioooooiai_cat/scene.gltf';
     loadSketchfabModel(playerModelPath, function(model) {
         player = model;
-        player.position.set(0, 0.5, -20); 
+        player.position.set(10, 0.5, -20); 
         player.scale.set(3.0, 3.0, 3.0); 
         player.rotation.y = 0; 
         scene.add(player);
@@ -190,7 +190,7 @@ function checkCollision(player, car) {
 
 function resetPlayer() {
     if (player) {
-        player.position.set(0, 0.5, -20); // 重置到马路边缘起始位置
+        player.position.set(10, 0.5, -20); // 重置到马路边缘起始位置
     }
     gameState.isMoving = false;
 }
